@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#entry-screen h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+}
+
+#entry-screen p {
+  margin: 0.2em;
+}
+
+.instruction {
+  margin-top: 1.5em;
+  font-style: italic;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#main-content {
+  padding: 2em;
+}
