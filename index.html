@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Directorate of Military Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="entry-screen">
+    <h1>DIRECTORATE OF MILITARY INTELLIGENCE</h1>
+    <p>PUBLIC RELEASE</p>
+    <p class="instruction">PRESS ENTER TO CONTINUE</p>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <h2>Welcome to the Public Access Terminal</h2>
+    <p>This is the Directorate's information repository. Access is monitored.</p>
+  </div>
+
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        document.getElementById("entry-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
